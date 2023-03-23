@@ -27,7 +27,7 @@ type User struct {
 	// TODO: set Provider here so that we can pass it to db
 	// populated by db (via mapstructure) or from provider (via json)
 	// Provider   string `json:"provider",mapstructure:"provider"`
-	Username   string `json:"username" mapstructure:"username"`
+	Username   string `json:"login" mapstructure:"username"`
 	Name       string `json:"name" mapstructure:"name"`
 	Email      string `json:"email" mapstructure:"email"`
 	CreatedOn  int64  `json:"createdon"`
